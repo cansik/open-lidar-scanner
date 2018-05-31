@@ -14,7 +14,7 @@ class Program : Application() {
 
     @Throws(Exception::class)
     override fun start(primaryStage: Stage) {
-        val loader = FXMLLoader(javaClass.classLoader.getResource("PrimaryView.fxml"))
+        val loader = FXMLLoader(javaClass.classLoader.getResource("view/PrimaryView.fxml"))
         val root = loader.load<Any>() as Parent
         val controller = loader.getController<Any>() as PrimaryController
 
